@@ -3,7 +3,7 @@ run-name: "🔄 CI en ${{ github.ref_name }} por @${{ github.actor }}"
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   cypress-run:
