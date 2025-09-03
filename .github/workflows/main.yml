@@ -2,7 +2,8 @@ name: Cypress Tests
 run-name: "🔄 CI en ${{ github.ref_name }} por @${{ github.actor }}"
 on:
   push:
-    branches: [master, main, develop]
+    branches:
+      - main
 
 jobs:
   cypress-run:
