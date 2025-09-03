@@ -20,5 +20,3 @@ jobs:
         run: npm ci
         env:
           CI: true
-      - name: Verify Cypress
-        run: npx cypress verify
