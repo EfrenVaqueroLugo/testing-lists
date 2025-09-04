@@ -24,13 +24,14 @@ jobs:
           node-version: 20
 
       - name: Install Dependencies
-        run: npm ci
-        env:
-          CI: true
+        run: |
+          npm install
+          npm list
 
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v2.9.7
         with:
+          browser: chrome
           start: npm start
           wait-on: "http://localhost:3000"
           wait-on-timeout: 60
